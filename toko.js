@@ -19,7 +19,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     var url = "https://wa.me/" + nomor + 
             "?text=Halo,%20saya%20" + nama + 
             "%0ALayanan%20Saya:%20" + layanan +
-            "%0APesan:%20" + pesan;
+            "%0ADetail:%20" + pesan;
 
     window.open(url, "_blank");
 });
