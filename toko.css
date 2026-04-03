@@ -1076,10 +1076,16 @@ footer {
 
   .produk-list {
     flex-direction: column;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
   }
 
   .produk {
     height: auto;
+    max-width: 360px;
+    margin: 0 auto;
+    width: 90%;
   }
 
   .produk h1 {
@@ -1090,15 +1096,24 @@ footer {
 
 
   .produk-item {
-    border-top: 10px solid #42bee7;
-    border-radius: 25px;
-    border-bottom: 10px solid #42bee7;
-    border-left: none;
-    margin-left: 15px;
-    width: auto;
-    margin-right: 15px;
-    padding: 15px;
-  }
+  border-top: 10px solid #42bee7;
+  border-bottom: 10px solid #42bee7;
+  border-radius: 25px;
+  border-left: none;
+  
+  /* PERUBAHAN DI SINI */
+  width: 100%;           /* Pakai 100% agar mengikuti lebar .produk (90%) */
+  margin: 10px 0;        /* Hapus margin kiri-kanan 15px, ganti ke margin atas-bawah */
+  box-sizing: border-box; /* WAJIB: Supaya padding & border tidak menambah lebar box */
+  padding: 15px;
+}
+
+  .produk img {
+  max-width: 100%; /* WAJIB: Mencegah gambar lebih lebar dari parent-nya */
+  height: auto;    /* Memastikan rasio gambar tetap proporsional (tidak gepeng) */
+  display: block;  /* Menghilangkan whitespace kecil di bawah gambar */
+  margin: 0 auto;  /* Memastikan gambar juga berada di tengah container-nya */
+}
 
   .produk-item p {
     font-size: 12px;
