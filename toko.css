@@ -26,6 +26,7 @@ header {
 header img {
   width: 5%;
   height: 5%;
+  filter: drop-shadow(0 0 3px white);
 }
 
 .navbar ul {
@@ -885,6 +886,7 @@ footer {
   header img {
   width: 20%;
   height: 20%;
+    filter: drop-shadow(0 0 3px white);
 }
 
   #order-map {
@@ -1391,6 +1393,7 @@ footer {
   header img {
   width: 5%;
   height: 5%;
+    filter: drop-shadow(0 0 3px white);
 }
 
   .box p {
