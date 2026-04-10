@@ -4,7 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="theme-color" content="#001f3f">
+    <meta name="theme-color" content="#001f3f">
     <link rel="icon" href="favicon-2.png" type="image/png">
     <title>Produk Makalah</title>
 </head>
@@ -20,9 +20,11 @@
     <div class="row g-5 flex-column justify-content-center align-content-center">
 
     <div class="col-12 col-md-6">
-    <div class="p-3 p-md-5 bg-light border border-warning border-3">
-        <h2 class="fs-5 text-danger fw-bold">🔰 Paket 1 - Basic (Rp 25.000)</h2>
-        <ul class="list-unstyled">
+    <div class="p-3 p-md-5" style="border: 3px solid brown; background: linear-gradient(135deg, #D2B48C, #A0522D);">
+        <h2 class="fs-5 text-light fw-bold">
+            <span class="emoji">🔰</span> Paket 1 - Basic (Rp 25.000)
+        </h2>
+        <ul class="list-unstyled text-light">
             <li>✔️ Cover</li>
             <li>✔️ Daftar isi</li>
             <li>✔️ Bab 1 - Bab 3</li>
@@ -30,19 +32,21 @@
             <li>✔️ 1x Revisi</li>
         </ul>
         <a href="https://wa.me/6281584266490?text=Halo%20Admin%20FyzzCareer%20, %0A%0ASaya%20ingin%20memesan%20paket%201">
-        <button class="btn btn-primary w-100">Pesan paket 1</button>
+        <button class="btn btn-light w-100" style="background-color: #8B4513; border: none;">Pesan paket 1</button>
         </a>
-        <p class="text-secondary small fw-semibold mt-2">
+        <p class="text-secondary small fw-semibold mt-2 text-light-emphasis">
     ✅ 50+ makalah selesai • ⏱ Fast respon • 🔁 Revisi sampai puas
 </p>
         </div>
     </div>
 
     <div class="col-12 col-md-6">
-    <div class="p-3 p-md-5 bg-light border border-warning border-3">
-        <h2 class="fs-5 text-danger fw-bold">⭐ Paket 2 - Lengkap + PPT (Rp 50.000)</h2>
+    <div class="p-3 p-md-5" style="border: 3px solid gold; background: linear-gradient(135deg, #FFD700, #FFA500);">
+        <h2 class="fs-5 text-light fw-bold">
+            <span class="emoji">👑</span> Paket 2 - Lengkap + PPT (Rp 40.000)
+        </h2>
         <span class="badge bg-warning text-dark mb-2">🔥 Best Seller</span>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled text-dark">
             <li>✔️ Cover</li>
             <li>✔️ Daftar isi</li>
             <li>✔️ Bab 1 - Bab 5</li>
@@ -51,7 +55,7 @@
             <li>✔️ PPT presentasi ( 8 slide )</li>
         </ul>
         <a href="https://wa.me/6281584266490?text=Halo%20Admin%20FyzzCareer%20, %0A%0ASaya%20ingin%20memesan%20paket%201">
-        <button class="btn btn-primary w-100">Pesan paket 2</button>
+        <button class="btn btn-light w-100" style="background-color: black; color: gold; border: none;">Pesan paket 2</button>
         </a>
         <p class="text-secondary small fw-semibold mt-2">
     ✅ 50+ makalah selesai • ⏱ Fast respon • 🔁 Revisi sampai puas
@@ -63,6 +67,26 @@
 </div>
 
     <footer class="bg-primary mt-auto p-4"></footer>
+
+    <style>
+        .emoji {
+        display: inline-block;
+        animation: naikTurun 1s ease-in infinite;
+}
+
+@keyframes naikTurun {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-5px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
+        </style>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
