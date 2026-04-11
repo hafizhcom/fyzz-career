@@ -10,7 +10,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header class="bg-primary p-2">
-        <a href="toko.html">
+        <a href="toko.html" class="text-decoration-none">
         <p class="text-white ms-2 "><svg xmlns="http://www.w3.org/2000/svg" width="26" height=26" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
 </svg> Paket Pembuatan Makalah</p>
@@ -24,7 +24,7 @@
         <h2 class="fs-5 text-light fw-bold">
             <span class="emoji">📊</span> Paket Standard (Rp 100.000)
         </h2>
-        <span class="badge bg-warning text-dark mb-2">👍 Recomended</span>
+        <span class="badge bg-warning text-dark mb-2">🔥 Recomended</span>
         <ul class="list-unstyled text-light">
             <li>✔️ Hero section</li>
             <li>✔️ About section</li>
@@ -37,8 +37,9 @@
             <li>✔️ Gratis hosting & domain</li>
         </ul>
         <a href="https://wa.me/6281584266490?text=Halo%20Admin%20FyzzCareer%20, %0A%0ASaya%20ingin%20memesan%20paket%201%20(Web%20portofolio)">
-        <button class="btn btn-primary w-100">Pesan paket 1</button>
+        <button class="btn btn-primary w-100" id="tombol">Pesan paket 1</button>
         </a>
+        <p id="teks"></p>
         <a tabindex="0" class="btn btn-primary mt-3" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Karena kamu mendapatkan website portfolio lengkap + langsung online tanpa ribet." data-bs-content="Hero sampai CTA → lengkap untuk bangun personal branding,
 Desain modern & responsive di semua device,
 ada Revisi, Gratis hosting & domain (langsung bisa diakses online) 👉 Artinya, kamu tidak perlu keluar biaya tambahan lagi untuk publish website.">💡 Kenapa cuma Rp 100.000 ?</a>
@@ -71,11 +72,11 @@ ada Revisi, Gratis hosting & domain (langsung bisa diakses online) 👉 Artinya,
             <li>✔️ SEO friendly</li>
             <li>✔️ Gratis hosting & domain</li>
         </ul>
-        <a href="https://wa.me/6281584266490?text=Halo%20Admin%20FyzzCareer%20, %0A%0ASaya%20ingin%20memesan%20paket%202%20(Web%20portofolio)">
-        <button class="btn btn-dark w-100">Pesan paket 2</button>
+        <a href="https://wa.me/6281584266490?text=Halo%20Admin%20FyzzCareer%20, %0A%0ASaya%20ingin%20memesan%20paket%202%20(web%20portofolio)">
+        <button class="btn btn-dark w-100" id="button">Pesan paket 2</button>
         </a>
-        <a tabindex="0" class="btn btn-dark mt-3" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Karena kamu bukan cuma dapet website…
-Tapi dapet portofolio profesional yang siap dipakai buat kerja & freelance 🔥" data-bs-content="Struktur lengkap dari Homepage sampai Form Kontak,
+        <p id="text"></p>
+        <a tabindex="0" class="btn btn-dark mt-3" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="Struktur lengkap dari Homepage sampai Form Kontak,
 Desain clean, modern, dan enak dilihat (premium UI),
 Animasi smooth untuk meningkatkan kesan profesional,
 Fully responsive di semua device (HP, tablet, laptop),
@@ -116,6 +117,22 @@ Revisi sampai puas + konsultasi desain langsung.">💡 Kenapa harganya Rp 350.00
     <script>
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+    const button = document.getElementById('button');
+    const text = document.getElementById('text');
+
+    button.addEventListener('click', function() {
+        text.innerHTML = "✅Pesanan paket 2 berhasil dibuat! Anda terhunbung dengan admin untuk proses selanjutnya."
+        text.style.color = "darkgreen";
+    });
+
+    const tombol = document.getElementById('tombol');
+    const teks = document.getElementById('teks');
+
+    tombol.addEventListener('click', function() {
+        teks.innerHTML = "✅Pesanan paket 1 berhasil dibuat! Anda terhunbung dengan admin untuk proses selanjutnya."
+        teks.style.color = "darkgreen";
+    });
     </script>
 </body>
 </html>
