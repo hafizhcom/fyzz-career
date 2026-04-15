@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="toko.css">
@@ -39,8 +40,8 @@
     <section id="hero">
         <h1 data-aos="fade-down">FyzzCareer<br><b>Jasa Pembuatan Web Portofolio, </b><br>Web Landing Page Usaha, CV, & Makalah.</h1>
         <p data-aos="fade-down">Layanan pembuatan Web portofolio, Web landing page usaha modern & responsif, desain CV yang memikat, hingga penyusunan Makalah <br>akademik yang sistematis. Pesan online dengan mudah dan cepat.</p>
-        <a href="#testimoni" class="button">Testimoni</a>
-        <a href="#produk" class="button" style="background-color: white; color: black; box-shadow: none">Lihat Produk</a>
+        <a href="#testimoni" class="button"><i class="fa-solid fa-person-circle-question text-light"></i>Testimoni</a>
+        <a href="#produk" class="button" style="background-color: white; color: black; box-shadow: none"><i class="fa-solid fa-eye text-dark"></i>Lihat Produk</a>
     </section>
 
     <div class="box">
@@ -244,24 +245,33 @@
     <h1 data-aos="fade-down">Pesan Sekarang Juga <b style="color: red;">!!!</b></h1>
     <div class="contact-list" data-aos="fade-up">
         <div class="contact-item">
-            <h3>✆ Pesan Cepat via WhatsApp</h3>
-            <p>Lakukan pemesanan layanan FyzzCareer secara cepat melalui WhatsApp.
+            <h3><i class="fa-brands fa-whatsapp"></i> Pesan Cepat via WhatsApp</h3>
+            <p> Lakukan pemesanan layanan FyzzCareer secara cepat melalui WhatsApp.
                 </p>
-                <a href="https://wa.me/6281584266490?text=Halo%20Admin%20FyzzCareer, %0Asaya%20ingin%20pesan%20produk. %0ANama produk : %0ADeadline : %0ATerima kasih" target="_blank" class="btn-wa">Pesan sekarang </a>
+                <a href="https://wa.me/6281584266490?text=Halo%20Admin%20FyzzCareer, %0Asaya%20ingin%20pesan%20produk. %0ANama produk : %0ADeadline : %0ATerima kasih" target="_blank" class="btn-wa"><i class="fa-brands fa-whatsapp text-light"></i>Pesan sekarang </a>
         </div>
 
         <div class="contact-item">
-            <h3>⏱ Jam operasional</h3>
+            <h3><i class="fa-regular fa-clock"></i>Jam operasional</h3>
             <ul>
-                <li>🗓 Senin - sabtu : 06.00 - 20.00</li>
-                <li>🗓 Kamis & minggu : Libur </li>
+                <li><i class="fa-regular fa-calendar"></i> Senin - sabtu : 06.00 - 20.00</li>
+                <li><i class="fa-regular fa-calendar"></i> Kamis & minggu : Libur </li>
             </ul>
         </div>
 
         <div class="contact-item">
-            <h3>˗ˋˏ$ˎˊ˗ Pembayaran</h3>
-            <p>Nomor DANA : 081584266490<br>atau melalui rekening Bank ( BJB )</p>
-            <a href="https://link.dana.id/minta?full_url=https://qr.dana.id/v1/" class="buy-btn">Bayar pake DANA</a>
+            <h3><i class="fas fa-wallet"></i> Pembayaran</h3>
+            <ul>
+                <li>DANA (QRIS)</li>
+                <li>Rekening Bank (BJB)</li>
+            </ul>
+            <button type="button" 
+        class="btn btn-primary p-2" 
+        data-bs-toggle="popover" 
+        data-bs-html="true" 
+        data-bs-content='<img src="qris-dana.jpeg" class="img-fluid" alt="QRIS DANA">'>
+        <i class="fa-solid fa-qrcode text-light"></i> Bayar via DANA
+</button>
         </div>
     </div>
     <form id="contactForm" data-aos="fade-down">
