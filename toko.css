@@ -14,10 +14,124 @@ body {
   transform: rotate(10deg) scale(1.2);
 }
 
+i .bi-box-arrow-in-up-right:hover {
+  transform: translateY(-10px);
+  transition: 0.5s ease-in ;
+}
+
 
 * {
   box-sizing: border-box;
 }
+
+/*dark mode */
+#toggleBtn {
+  border-radius: 50%;
+  padding: 7px;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode footer {
+  background-color: black;
+}
+
+.dark-mode .text-foot {
+  background-color: rgb(19, 17, 17);
+}
+
+.dark-mode .box p{
+  color: white;
+}
+
+.dark-mode .box-item {
+  background-color: #2b2b2b;
+  border: 1px solid cyan;
+}
+
+.dark-mode .box-item h2 {
+  color: lightblue;
+}
+
+.dark-mode .box-item:hover, .dark-mode .contact-item:hover, .dark-mode .testimoni-item:hover {
+  background-color: black;
+}
+
+.dark-mode .promosi {
+  background-color: #2b2b2b;
+  border-left: 8px solid cyan;
+}
+
+.dark-mode .teks p {
+  color: white;
+}
+
+.dark-mode .about, .dark-mode #faq {
+  background-color: #2b2b2b;
+}
+
+.dark-mode .fyzz-list li strong {
+  color: cyan;
+}
+
+.dark-mode #hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("bg-4.jpeg");
+}
+
+.dark-mode .about h1, .dark-mode #produk h1, .dark-mode .testimoni h1, .dark-mode .contact h1, .dark-mode .testimoni-item h3  {
+  color: cyan;
+}
+
+.dark-mode .about p, .dark-mode .testimoni-item p, .dark-mode #contactForm p {
+  color: white;
+}
+
+.dark-mode .medsos-item {
+  background-color: #2a2a2a;
+  border: 1px solid cyan;
+} 
+
+.dark-mode .produk-item, .dark-mode .contact-item {
+  background-color: #2a2a2a;
+  box-shadow: none;
+}
+
+.dark-mode .produk-item h2 {
+  color: cyan;
+}
+
+.dark-mode .produk-item a {
+  color: lightblue;
+}
+
+.dark-mode .testimoni-item, .dark-mode #contactForm {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .contact-item li, .dark-mode .contact-item p {
+  color: lightblue;
+}
+
+.dark-mode #contactForm input , .dark-mode #contactForm textarea {
+  background-color: #2a2a2a;
+  border: 1px solid cyan;
+  color: white;
+}
+
+.dark-mode .faq-list button {
+  color: white;
+}
+
+
 
 header {
   /*background-color: #F8F9FA;*/
