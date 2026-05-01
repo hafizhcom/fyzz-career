@@ -40,3 +40,25 @@ function promo() {
     });
 
 }
+
+const toggleBtn = document.getElementById("toggleBtn");
+const body = document.body;
+
+if(localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    toggleBtn.innerText = "☀️";
+} else {
+    toggleBtn.innerText = "🌙";
+}
+
+toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if(body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.innerText = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        toggleBtn.innerText = "🌙";
+    }
+});
