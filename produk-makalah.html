@@ -89,13 +89,17 @@
     transform: translateY(0);
     }
 }
+
+    .dark-mode {
+    background-color: #1a1a1a;
+    }
         </style>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script>
         const button = document.getElementById('button');
-    const text = document.getElementById('text');
+        const text = document.getElementById('text');
 
     button.addEventListener('click', function() {
         text.innerHTML = "🟢 Pesanan paket 2 berhasil dibuat! Anda terhunbung dengan admin untuk proses selanjutnya."
@@ -109,6 +113,28 @@
         teks.innerHTML = "🟢 Pesanan paket 1 berhasil dibuat! Anda terhunbung dengan admin untuk proses selanjutnya."
         teks.style.color = "darkgreen";
     });
+
+    const toggleBtn = document.getElementById("toggleBtn");
+    const body = document.body;
+
+if(localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    toggleBtn.innerText = "☀️";
+} else {
+    toggleBtn.innerText = "🌙";
+}
+
+toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if(body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.innerText = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        toggleBtn.innerText = "🌙";
+    }
+});
     </script>
 </body>
 </html>
