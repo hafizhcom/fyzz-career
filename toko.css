@@ -28,6 +28,13 @@ i .bi-box-arrow-in-up-right:hover {
 #toggleBtn {
   border-radius: 50%;
   padding: 7px;
+  border: none;
+  background: none;
+  font-size: 25px;
+}
+
+#toggleBtn:hover {
+  transform: rotate(23deg);
 }
 
 .dark-mode {
@@ -1007,9 +1014,9 @@ footer {
   }
 
   header img {
-  width: 20%;
-  height: 20%;
-    filter: drop-shadow(0 0 3px white);
+  width: 15%;
+  height: 15%;
+  filter: drop-shadow(0 0 3px white);
 }
 
   #order-map {
