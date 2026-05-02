@@ -1307,7 +1307,7 @@ footer {
     display: flex;
     gap: 16px;
     width: max-content; /* SANGAT PENTING: Supaya lebar mengikuti jumlah kartu */
-    animation: jalanTerus 8s linear infinite; /* Gunakan durasi lebih lama, 3s terlalu cepat */
+    animation: jalanTerus 15s linear infinite; /* Gunakan durasi lebih lama, 3s terlalu cepat */
   }
 
   @keyframes jalanTerus {
