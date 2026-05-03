@@ -56,7 +56,7 @@ border-top: 1px solid #2a2a2a;
 }
 
 .dark-mode .text-foot {
-  background-color: rgb(19, 17, 17);
+  background: linear-gradient(90deg, #111111, #1e1e1e);
 }
 
 .dark-mode .box p{
